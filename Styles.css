@@ -1,0 +1,54 @@
+.hero-section {
+    position: relative ;
+    height: 400px;
+    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmQAK9M5_K3rlaRKMafTvGwC_J9q_v3JYLQ&s') no-repeat center center ;
+    background-size: cover;
+    animation: scrollbg 20s linear infinite;
+    text-align: center;
+    /*display: flex;
+    flex-direction: column;*/
+    justify-content: center;
+}
+/* Animation keyframes */
+@keyframes scrollbg {
+    0% {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmQAK9M5_K3rlaRKMafTvGwC_J9q_v3JYLQ&s');
+    }
+    25% {
+        background-image: url('https://www.theindianwire.com/wp-content/uploads/2020/05/coast.jpg');
+    }
+    50% {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToxEi8axwkh6BpgLw5vOaSfylaikQ718Rlmg&s');
+    }
+    75% {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLIPEimsKFulTAf9GozZGkD6PtnHqXIgh4Q&s');
+    }
+    100% {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8dUTLmeGUDTJpoB0V1ZlXaanC4oSHjQ_Abw&s');
+    }
+}
+.hero-section h1 {
+    font-size: 4em;
+    margin: 0;
+    color: rgb(247, 247, 249);
+}
+.hero-section p {
+    font-size: 1.5em;
+    color: rgb(251, 251, 251);
+}
+.hero-section .buttons {
+    margin-top: 20px;
+}
+.hero-section .buttons a {
+    background-color: #920505eb;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 1.2em;
+  }
+.carousel-item img{
+    height: 100vh;
+  object-fit: cover;
+}
