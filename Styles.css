@@ -1,6 +1,8 @@
 .hero-section {
     position: relative ;
     height: 700px;
+    height: 400px;
+    width: 100%;
     background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmQAK9M5_K3rlaRKMafTvGwC_J9q_v3JYLQ&s') no-repeat center center ;
     background-size: cover;
     animation: scrollbg 20s linear infinite;
@@ -20,18 +22,18 @@
         background-image: url('https://www.theindianwire.com/wp-content/uploads/2020/05/coast.jpg');
     }
     50% {
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToxEi8axwkh6BpgLw5vOaSfylaikQ718Rlmg&s');
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGyunEu6Wmw5sXITfbEvr5P-JFO8a9PG4YqQ&s');
     }
     75% {
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLIPEimsKFulTAf9GozZGkD6PtnHqXIgh4Q&s');
+        background-image: url('https://blogs.ibo.org/files/2019/05/iStock_Students_and_tourists_on_Harvard_Campus-1200x800.jpg');
     }
     100% {
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8dUTLmeGUDTJpoB0V1ZlXaanC4oSHjQ_Abw&s');
+        background-image: url('https://educationsnapshots.com/wp-content/uploads/sites/4/2019/03/university-of-nottingham-teaching-and-learning-building-12-1200x800.jpg');
     }
 }
 .hero-section h1 {
     font-size: 4em;
-    margin: 0;
+    margin: 20;
     color: rgb(247, 247, 249);
 }
 .hero-section p {
@@ -42,7 +44,7 @@
     margin-top: 20px;
 }
 .hero-section .buttons a {
-    background-color: #920505eb;
+    background-color: rgb(116, 5, 5);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -50,15 +52,6 @@
     margin: 0 10px;
     font-size: 1.2em;
   }
-.carousel-item img{
-    height: 100vh;
-  object-fit: cover;
-}
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
 .NavBar {
     display: grid;
   grid-template-columns: 100%;   
