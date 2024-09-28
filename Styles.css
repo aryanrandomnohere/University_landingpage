@@ -1,17 +1,17 @@
 .hero-section {
     position: relative ;
-    height: 700px;
-    height: 400px;
+    height: 500px;
     width: 100%;
     background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmQAK9M5_K3rlaRKMafTvGwC_J9q_v3JYLQ&s') no-repeat center center ;
     background-size: cover;
     animation: scrollbg 20s linear infinite;
     text-align: center;
-    /*display: flex;
-    flex-direction: column;*/
-    justify-content: center;
+    border: 2px solid rgb(207, 198, 198);
+    border-radius: 10px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 /* Animation keyframes */
 @keyframes scrollbg {
@@ -33,7 +33,7 @@
 }
 .hero-section h1 {
     font-size: 4em;
-    margin: 20;
+    margin: 5px;
     color: rgb(247, 247, 249);
 }
 .hero-section p {
@@ -41,7 +41,7 @@
     color: rgb(251, 251, 251);
 }
 .hero-section .buttons {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .hero-section .buttons a {
     background-color: rgb(116, 5, 5);
@@ -53,13 +53,15 @@
     font-size: 1.2em;
   }
 .NavBar {
-    display: grid;
-  grid-template-columns: 100%;   
+    display: flex;
+    flex-direction: column;
+   
   margin-bottom: 85px;
 }
 
 .Mnav {
     display: flex;
+    
     box-shadow: 5px 2px 2px; 
     background-color: rgb(116, 5, 5);
     width: 100%;
@@ -73,27 +75,36 @@
 
 .nav1{
 font-weight: bolder;
+text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000; 
+
+font-family: "Times New Roman", serif; 
 font-size: x-large;
-margin-left: 5px;
+margin-left: 15px;
 color: white;
 }
 
 .Himg{
     height: 80px;
     width: 80px;
-    margin-left: 5%;
+    margin-left: 0;
     justify-items: flex-start;
     
 }
 .icon1{
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     padding-top: 8px;
     padding-bottom: 8px;
     margin-top: 2px;
     cursor: pointer;
     padding-left: 10px;
     padding-right: 10px;
+    margin-right: 20px;
+    align-self: self-end;
 }
 .icon1:hover{
     background-color: rgba(153, 153, 153, 0.274);
@@ -101,26 +112,23 @@ color: white;
 }
 
 .nav2 {
-    margin-left: 22% ;
+    margin-left: 12% ;
 }
 .Noptions {
 margin-left: 18%;
 display: flex;
 gap: 20px;
 }
-
 .option {
     cursor: pointer;
-    font-style: serif;
+    font-family: 'Raleway', sans-serif;
+
     color: white;
     font-size: larger;
     font-weight: bold;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    
+    padding: 6px 20px; 
 }
+
 .option:hover {
     
     border-bottom: 2px solid #460202;
