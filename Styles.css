@@ -78,11 +78,11 @@
 .nav1{
     display: flex;
 font-weight: bolder;
-text-shadow: 
+/*text-shadow: 
         -1px -1px 0 #000,
         1px -1px 0 #000, 
         -1px 1px 0 #000, 
-        1px 1px 0 #000; 
+        1px 1px 0 #000;*/ 
 
 font-family: "Times New Roman", serif; 
 font-size: x-large;
@@ -213,4 +213,89 @@ width: 30px;}
 .university-info li {
     margin-bottom: 5px; /* Space between list items */
     color: #333; /* Dark color for list items */
+}
+
+/*Footer Styling*/
+footer {
+    background-color: rgb(116, 5, 5);
+    color: white ;
+    padding: 40px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-block {
+    display: flex;
+    flex: 1 1 250px;  /* Flexibly divide blocks, set a minimum width */
+    margin: 0 20px;
+}
+.footer-block .content {
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo {
+    max-width: 80px;  /* Reduce the logo size */
+    margin-bottom: 10px;
+}
+.logo-name-section {
+    display: flex;
+    align-items: center;  /* Align logo and text vertically in the middle */
+    flex: 1 1 300px;
+    font-size: 40px;
+}
+.footer-block h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: white; /* Highlight color for headers */
+}
+.footer-block .menu {
+    list-style-type: none;  /* Remove bullet points */
+    padding: 0;
+}
+
+.footer-block .menu li {
+    margin-bottom: 4px;  /* Space between links */
+}
+
+.footer-block .menu li a {
+    color: rgb(232, 193, 193);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-block .menu li a:hover {
+    color: #ffcc00;  /* Hover effect for links */
+    text-decoration: underline;
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #d3d0d0;  /* Slightly darker background */
+    color: #540303;  /* Lighter text color */
+    font-size: 0.9em;
+}
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;  /* Stack footer sections vertically on small screens */
+        align-items: center;
+    }
+    .footer-block {
+        text-align: flex;
+        margin-bottom: 20px;
+    }
+    .logo-name-section {
+        justify-content: center;
+    }
 }
