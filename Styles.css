@@ -131,7 +131,7 @@ gap: 20px;
 .option {
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
-
+    list-style-type: none;
     color: white;
     font-size: larger;
     font-weight: bold;
@@ -144,23 +144,20 @@ gap: 20px;
     padding-bottom: 5px;
 }
 
-@media only screen and (max-width: 1200px){
-  .option{  display: none;}
-.nav1{
-    align-self: center;
-}
-   }
+
+
 
 @media only screen and (max-width: 400px){
 .icon1{  height: 30px;
 width: 30px;}
-.nav1{
+.nav1{  
     font-size: large;
 }
 .Himg{
     height: 70px;
     width: 70px;
 }
+
 
    }
    
@@ -170,15 +167,24 @@ width: 30px;}
 /* Programs */
 /* General styles for the university info section */
 .university-info {
-    padding: 40px;
+ 
+    padding: 20px;
     background-color: #f4f4f4; /* Light background for the section */
+}
+.pcd{
+    display: flex;
+    gap: 15px;
+    /* flex-direction: column; */
 }
 
 /* Main title styling */
 .university-info h1 {
     text-align: center;
-    color: #333; /* Dark color for main title */
-    margin-bottom: 30px; /* Space below the main title */
+    font-size: xx-large;
+    color: #010911;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #e1e5ea;
+    padding-bottom: 10px;
 }
 
 /* Styling for each subsection */
