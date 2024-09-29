@@ -305,3 +305,43 @@ footer {
         justify-content: center;
     }
 }
+
+/* Research Section Styling */
+#research {
+    background-color: #f8f8f8; /* Light background color */
+    padding: 40px 0;
+    text-align: center; /* Center text */
+}
+
+#research h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black ; /* Match your footer color */
+}
+
+.research-block {
+    display: flex;
+    justify-content: space-around; /* Evenly space out items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.research-item {
+    flex: 1 1 30%; /* Set each item to take up 30% of the row */
+    margin: 10px;
+    text-align: left; /* Align description text left */
+}
+
+.research-image {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.research-description {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #007bff; /* Darker color for text */
+}
