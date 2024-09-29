@@ -345,3 +345,194 @@ footer {
     font-size: 1.5em;
     color: #007bff; /* Darker color for text */
 }
+body{
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+  .campus-images {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f0f0f0;
+}
+
+.campus-images h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    scroll-snap-type: x mandatory; /* For smooth scrolling */
+    gap: 20px; /* Increased space between images */
+    padding: 10px; /* Padding for container */
+    scrollbar-width: thin; /* For Firefox */
+}
+
+.image-container::-webkit-scrollbar {
+    height: 8px; /* Height of horizontal scrollbar */
+}
+
+.image-container::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 10px; /* Rounded edges for scrollbar */
+}
+
+.image-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color on hover */
+}
+
+.image {
+    flex: 0 0 auto; /* Prevents images from shrinking */
+    width: 750px; /* Fixed width for images */
+    height: 500px; /* Fixed height for images */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    scroll-snap-align: start; /* Aligns images at the start of the container */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.image:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+@media only screen and (max-width: 1200px) {
+  .option {
+    display: none;
+  }
+  
+  .nav1 {
+    align-self: center;
+  }
+  
+  .pcd {
+    flex-direction: column;
+  }
+  
+  .application-section {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .image {
+    height: 300px; /* Adjust the height for smaller screens */
+    width: 500px; /* Adjust the width for smaller screens */
+  }
+}
+
+
+.application-section {
+    display: flex;
+    background-color: #ffffff;
+    padding: 40px;
+    /* border-radius: 15px; */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto ;
+    gap: 40px;
+  
+  } 
+  
+  .Atittle {
+    text-align: center;
+    font-size: xx-large;
+    color: #000000;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #e1e5ea;
+    padding: 10px;
+  
+    background-color: #f4f4f4;
+  }
+ 
+  
+  
+  .application-section h2 {
+    color: #007bff; /* Blue color for subsection titles */
+    margin-bottom: 10px;
+  }
+  
+
+  .procedure ul, .requirements ul, .deadlines ul {
+    margin-left: 0;
+    padding-left: 0;    
+    margin-bottom: 30px;
+   
+  }
+  
+  .procedure ul {
+    list-style: none; /* Remove default numbering */
+    counter-reset: step-counter;
+  }
+  
+  .procedure li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 35px; /* Adjust padding for number circle */
+  }
+  
+  .procedure li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0;
+    background-color: #4a90e2;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+  }
+  
+  .requirements ul, .deadlines ul {
+    list-style-type: none;
+  }
+  
+  .requirements li::before, .deadlines li::before {
+    content: "✔";
+    color: #4a90e2;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .requirements li {
+    margin-bottom: 10px;
+  }
+  
+  .deadlines ul ul {
+    margin-left: 20px;
+  }
+  
+  .deadlines li strong {
+    color: #d35400;
+  }
+  
+  .deadlines li ul li::before {
+    content: "•";
+    color: #4a90e2;
+  }
+  
+  .application-section {
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+  
+  .application-section p {
+    color: #555555;
+  }
+  
+  .application-section li {
+    color: #666666;
+  }
+  
+  .application-section a {
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  
+  .application-section a:hover {
+    text-decoration: underline;
+  }
